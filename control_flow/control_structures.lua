@@ -36,11 +36,17 @@ end
 
 if age > 20 then
 	print("You are old")
+	if name ~= "Bagrat" then
+		print("...")
+	end
 elseif age == 20 then
-  print('You are teenager')
-  if name == 'Bagrat' then
-    print(name .. " you are not old and not young. ")
+	print("You are teenager")
+	if name == "Bagrat" then
+		print(name .. " you are not old and not young. ")
 	end
 else
 	print("You are young")
 end
+
+local old = age > 30 and true or false
+print(old)
